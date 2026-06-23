@@ -14,7 +14,7 @@ class BodyTrackerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Body Tracker',
+      title: 'Physically',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.light(),
       home: const RootShell(),
@@ -45,9 +45,7 @@ class _RootShellState extends State<RootShell> {
     return Scaffold(
       appBar: AppBar(
         title: Row(children: [
-          const Text('akti',
-              style: TextStyle(fontWeight: FontWeight.w300)),
-          const Text('BODY',
+          const Text('Physically',
               style: TextStyle(
                   fontWeight: FontWeight.w900, color: AppTheme.accent)),
           const SizedBox(width: 12),
@@ -64,12 +62,10 @@ class _RootShellState extends State<RootShell> {
               icon: Icon(Icons.accessibility_new), label: 'Body'),
           NavigationDestination(
               icon: Icon(Icons.monitor_weight), label: 'Weight'),
-          NavigationDestination(
-              icon: Icon(Icons.analytics), label: 'InBody'),
+          NavigationDestination(icon: Icon(Icons.analytics), label: 'InBody'),
           NavigationDestination(
               icon: Icon(Icons.auto_awesome), label: 'Prompt'),
-          NavigationDestination(
-              icon: Icon(Icons.settings), label: 'Settings'),
+          NavigationDestination(icon: Icon(Icons.settings), label: 'Settings'),
         ],
       ),
     );

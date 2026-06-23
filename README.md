@@ -1,4 +1,4 @@
-# Body Tracker
+# Physically (Body Tracker)
 
 A Flutter app to track body composition (circumference measurements, weight,
 InBody 270 scans) and **export an LLM-ready prompt** containing all your
@@ -12,11 +12,11 @@ Custom-painted silhouette with 13 tappable measurement points (neck,
 shoulders, chest, biceps, forearms, waist, hips, thighs, calves). Tap any
 label to log a new value; you'll see that part's full history chart inline
 and a list of recent entries with delete. Latest value + delta-vs-previous
-are rendered right next to the body, aktiBODY-style. Summary tiles below
+are rendered right next to the body. Summary tiles below
 show current weight, muscle mass, body fat %, and BMI.
 
 ### ⚖️ Weight tab
-Fast weight logging, headline current-weight card with delta since first
+Fast weight logging, headline current-weight card with delta since previous
 entry, full-history line chart, timeline of all entries.
 
 ### 📊 InBody tab
@@ -34,11 +34,10 @@ Builds a structured Markdown prompt that packages:
 - Your profile (age, sex, height, activity level, notes)
 - Your goal + target weight / body fat / date
 - Last N InBody scans as a Markdown table
-- Period deltas (how weight, muscle, fat, etc. changed)
+- Previous-entry deltas (how weight, muscle, fat, etc. changed)
 - Latest segmental lean/fat breakdown (arms, trunk, legs)
 - Recent weight log
-- All circumferences with latest value, change-since-previous, and
-  change-since-first entries
+- All circumferences with latest value and change-since-previous entries
 - An explicit 5-point set of questions for the LLM
 
 Then:
@@ -55,8 +54,8 @@ coach) + destructive "delete all tracked data" option.
 ## Setup
 
 ```bash
-cd body_tracker
-flutter create . --project-name body_tracker --org com.example
+cd "Physically (Body Tracker)"
+flutter create . --project-name physically --org com.example
 flutter pub get
 flutter run
 ```

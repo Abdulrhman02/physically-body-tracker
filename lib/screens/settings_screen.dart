@@ -211,7 +211,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const Text('About',
                     style: TextStyle(fontWeight: FontWeight.w700)),
                 const SizedBox(height: 6),
-                const Text('Body Tracker · v1.0'),
+                const Text('Physically · Body Tracker · v1.0'),
                 const SizedBox(height: 4),
                 Text(
                   'All data stays on your device. Use the Prompt tab to '

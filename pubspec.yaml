@@ -1,5 +1,5 @@
-name: body_tracker
-description: Body composition tracker with InBody import and LLM prompt export.
+name: physically
+description: Physically body composition tracker with InBody import and LLM prompt export.
 publish_to: 'none'
 version: 1.0.0+1
 
